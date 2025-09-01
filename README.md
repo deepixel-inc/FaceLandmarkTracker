@@ -29,6 +29,24 @@ pip install deeppy-2.19.459-cp310-cp310-win_amd64.whl
 
 ---
 
+
+## Performance
+
+`FaceLandmarkTracker` is optimized for real-time performance on CPU. Typical inference speeds:
+
+| CPU                                        | Resolution  | FPS (CPU) |
+| ------------------------------------------ | ------------- | ----------- |
+| Noteboook CPU (Intel i7 11th Gen)          |  640x480    |   200     |
+| Desktop CPU (Intel i7 11th Gen)            |  640x480    |   330       | 
+
+* No GPU required — runs efficiently on modern CPUs
+* Real-time performance with webcam streams
+* Benchmarks may vary depending on CPU model and input resolution
+
+> ⚠️ **Note:** Performance may be slightly lower when displaying debug visualization.
+
+
+
 ## Python Usage
 1. Example Python code for capturing and processing a live camera stream.
 
