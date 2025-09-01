@@ -24,6 +24,8 @@ Below is an illustration showing the **landmark indexing scheme**:
 * Debug visualization of landmarks
 * Easy Python integration
 * Works on CPU only — no GPU required
+* Supported Python versions: 3.9, 3.10, 3.11, 3.12
+
 ---
 
 ## Installation
