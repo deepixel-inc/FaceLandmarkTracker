@@ -22,7 +22,7 @@
 Install via pip using the provided `.whl` file:
 
 ```bash
-pip install FaceLandmarkTracker-<version>-py3-none-any.whl
+pip install deeppy-2.19.459-cp310-cp310-win_amd64.whl
 ```
 
 > ⚠️ **Note:** This library requires an **active internet connection** to validate your license at runtime.
