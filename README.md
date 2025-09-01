@@ -112,6 +112,17 @@ image_out = display_debug(image_src)
 
 ---
 
+## Landmark Indexing
+
+`FaceLandmarkTracker` outputs an array of **106 keypoints** corresponding to facial landmarks.
+Each landmark has a fixed index, which you can use to identify facial regions such as eyes, nose, lips, and jawline.
+
+Below is an illustration showing the **landmark indexing scheme**:
+
+![Landmark Index Map](docs/face_landmarks.png)
+*(Example: numbers correspond to keypoint indices returned by `get_keypoints()`)*
+
+
 ## License
 
 This library is **proprietary and requires a paid license**. You may **not use, distribute, or modify** it without a valid license.
