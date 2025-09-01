@@ -191,6 +191,5 @@ An active internet connection is required at runtime for license validation.
 * Provide your organization name and intended use case
 * We will provide license terms and pricing
 
-> ![Get License](https://img.shields.io/badge/Get%20License-Contact%20Us-yellow)
 
 ---
