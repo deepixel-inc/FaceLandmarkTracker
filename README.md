@@ -30,12 +30,13 @@ pip install deeppy-2.19.459-cp310-cp310-win_amd64.whl
 ---
 
 ## Python Usage
+1. Example Python code for capturing and processing a live camera stream.
 
 ```python
 import cv2
 from deeppy import FaceLandmarkTracker
 
-def run_face_tracker():
+def run_face_tracker_camera():
     dp_face = FaceLandmarkTracker()
     dp_face.init()
 
@@ -64,7 +65,42 @@ def run_face_tracker():
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    run_face_tracker()
+    run_face_tracker_camera()
+```
+
+
+2. Example Python code for processing from images.
+
+```python
+import cv2
+from deeppy import FaceLandmarkTracker
+
+def run_face_tracker_image(image_paths):
+    dp_face = FaceLandmarkTracker()
+    dp_face.init()
+
+    for path in image_paths:
+        frame = cv2.imread(path)
+        if frame is None:
+            print("Failed to load image.")
+            return
+    
+        dp_face.run(frame, 0.2, True)
+        print("Keypoints:", dp_face.get_keypoints())
+        print("Rect:", dp_face.get_rect())
+        print("Pose:", dp_face.get_pose())
+
+        frame = dp_face.display_debug(frame)
+        cv2.imshow("FaceLandmarkTracker", frame)
+
+        if cv2.waitKey(0) & 0xFF == 27:  # ESC key
+            break
+
+    cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    image_paths = ["example.jpg","example2.jpg"]
+    run_face_tracker_image(image_paths)
 ```
 
 ---
