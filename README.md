@@ -119,7 +119,7 @@ Each landmark has a fixed index, which you can use to identify facial regions su
 
 Below is an illustration showing the **landmark indexing scheme**:
 
-![Landmark Index Map](docs/face_landmarks.png)
+<img width="512" height="512" alt="result" src="https://github.com/user-attachments/assets/05862c02-4a6d-4654-a8b9-c96652170ec2" />
 *(Example: numbers correspond to keypoint indices returned by `get_keypoints()`)*
 
 
