@@ -1,9 +1,5 @@
 # FaceLandmarkTracker
 
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![Version](https://img.shields.io/badge/version-1.0.0-green)
-![License](https://img.shields.io/badge/license-Proprietary-red)
-![Commercial](https://img.shields.io/badge/Commercial%20License-Required-orange)
 [![Get License](https://img.shields.io/badge/Get%20License-Contact%20Us-yellow)](#license)
 
 `FaceLandmarkTracker` is a high-performance face landmark detection and tracking library built on **OpenCV** and **DeepCore (Deepixels proprietary library)**. It leverages TensorFlow Lite models for real-time face detection, landmark extraction, and head pose estimation. A Python wrapper is included for easy integration.
@@ -29,7 +25,7 @@ Install via pip using the provided `.whl` file:
 pip install FaceLandmarkTracker-<version>-py3-none-any.whl
 ```
 
-> ⚠️ **Note:** This library is **proprietary and paid**. You must have a valid license to use it.
+> ⚠️ **Note:** This library requires an **active internet connection** to validate your license at runtime.
 
 ---
 
@@ -126,11 +122,13 @@ Below is an illustration showing the **landmark indexing scheme**:
 
 ## License
 
-This library is **proprietary and requires a paid license**. You may **not use, distribute, or modify** it without a valid license.
+This library is **proprietary and requires a paid license**. You may **not use, distribute, or modify** it without a valid license.  
+An active internet connection is required at runtime for license validation.  
+
 
 ### How to Get a License
 
-* Contact us via email: [sales@deepixels.com](mailto:sales@deepixels.com)
+* Contact us via email: [support@deepixels.xyz](mailto:support@deepixels.xyz)
 * Provide your organization name and intended use case
 * We will provide license terms and pricing
 
