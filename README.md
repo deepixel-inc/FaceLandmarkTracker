@@ -98,6 +98,11 @@ visibility = get_visibility()
 pose = get_pose()
 ```
 
+* `get_keypoints()` – returns N x 2 array of facial landmarks
+* `get_rect()` – returns bounding box `[x, y, w, h]`
+* `get_visibility()` – visibility confidence per landmark
+* `get_pose()` – estimated head pose `[pitch, yaw, roll]`
+
 ### Visualization
 
 ```python
