@@ -14,7 +14,7 @@
 * Visibility confidence per keypoint
 * Debug visualization of landmarks
 * Easy Python integration
-
+* Works on CPU only — no GPU required
 ---
 
 ## Installation
