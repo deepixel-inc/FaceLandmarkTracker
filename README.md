@@ -41,7 +41,7 @@ from deeppy import FaceLandmarkTracker
 
 def run_face_tracker():
     dp_face = FaceLandmarkTracker()
-    dp_face.init("head_lite.tflite", "face_v7_7_lite.tflite")
+    dp_face.init()
 
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
@@ -53,7 +53,7 @@ def run_face_tracker():
         if not ret:
             break
 
-        dp_face.run(frame, 0.1, False)
+        dp_face.run(frame, 0.2, False)
         print("Keypoints:", dp_face.get_keypoints())
         print("Rect:", dp_face.get_rect())
         print("Pose:", dp_face.get_pose())
@@ -90,7 +90,7 @@ run(image_src, fThresh, isStill)
 ```
 
 * `image_src` – input image (numpy array)
-* `fThresh` – confidence threshold
+* `fThresh` – confidence threshold, the common value is around 0.2
 * `isStill` – whether image is static
 
 ### Get Results
@@ -120,6 +120,7 @@ Each landmark has a fixed index, which you can use to identify facial regions su
 Below is an illustration showing the **landmark indexing scheme**:
 
 <img width="512" height="512" alt="result" src="https://github.com/user-attachments/assets/05862c02-4a6d-4654-a8b9-c96652170ec2" />
+
 *(Example: numbers correspond to keypoint indices returned by `get_keypoints()`)*
 
 
