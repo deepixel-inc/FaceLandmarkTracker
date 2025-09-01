@@ -4,6 +4,15 @@
 
 `FaceLandmarkTracker` is a high-performance face landmark detection and tracking library built on **OpenCV** and **DeepCore (Deepixels proprietary library)**. It leverages TensorFlow Lite models for real-time face detection, landmark extraction, and head pose estimation. A Python wrapper is included for easy integration.
 
+`FaceLandmarkTracker` outputs an array of **106 keypoints** corresponding to facial landmarks.
+Each landmark has a fixed index, which you can use to identify facial regions such as eyes, nose, lips, and jawline.
+
+Below is an illustration showing the **landmark indexing scheme**:
+
+<img width="512" height="512" alt="result" src="https://github.com/user-attachments/assets/05862c02-4a6d-4654-a8b9-c96652170ec2" />
+
+*(Example: numbers correspond to keypoint indices returned by `get_keypoints()`)*
+
 ---
 
 ## Features
@@ -167,16 +176,7 @@ image_out = display_debug(image_src)
 
 ---
 
-## Landmark Indexing
 
-`FaceLandmarkTracker` outputs an array of **106 keypoints** corresponding to facial landmarks.
-Each landmark has a fixed index, which you can use to identify facial regions such as eyes, nose, lips, and jawline.
-
-Below is an illustration showing the **landmark indexing scheme**:
-
-<img width="512" height="512" alt="result" src="https://github.com/user-attachments/assets/05862c02-4a6d-4654-a8b9-c96652170ec2" />
-
-*(Example: numbers correspond to keypoint indices returned by `get_keypoints()`)*
 
 
 ## License
