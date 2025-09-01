@@ -56,7 +56,7 @@ pip install deeppy-2.19.459-cp310-cp310-win_amd64.whl
 
 > ⚠️ **Note:** Performance may be slightly lower when displaying debug visualization.
 
-
+---
 
 ## Python Usage
 1. Example Python code for capturing and processing a live camera stream.
