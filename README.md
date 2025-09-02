@@ -186,7 +186,7 @@ An active internet connection is required at runtime for license validation.
 
 ### How to Get a License
 
-* Contact us via email: [support@deepixels.xyz](mailto:support@deepixel.xyz)
+* Contact us via email: [support@deepixel.xyz](mailto:support@deepixel.xyz)
 
 
 ---
