@@ -98,7 +98,7 @@ if __name__ == "__main__":
 ```
 
 
-2. Example Python code for processing from images.
+2. Example Python code for processing images.
 
 ```python
 import cv2
@@ -139,7 +139,7 @@ if __name__ == "__main__":
 ### Initialization
 
 ```python
-bool init()
+init()
 ```
 * Returns `True` if models loaded successfully
 
