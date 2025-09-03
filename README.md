@@ -30,13 +30,17 @@ Below is an illustration showing the **landmark indexing scheme**:
 
 ## Installation
 
-Install via pip using the provided `.whl` file:
+Install via pip using the `.whl` file that matches your Python version:
 
 ```bash
+# Python 3.10
 pip install deeppy-2.19.459-cp310-cp310-win_amd64.whl
+
+# Python 3.11
+pip install deeppy-2.19.459-cp311-cp311-win_amd64.whl
 ```
 
-> ⚠️ **Note:** This library requires license validation at runtime.
+> Make sure the `cpXXX` in the filename matches your Python version.
 
 ---
 
