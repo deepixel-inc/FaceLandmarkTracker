@@ -66,7 +66,7 @@ import cv2
 from deeppy import FaceLandmarkTracker
 
 # Path to your license file
-license_path="face106.lic"
+license_path="dp_face_2025.lic"
 
 def run_face_tracker_camera():
     dp_face = FaceLandmarkTracker()
@@ -108,7 +108,7 @@ import cv2
 from deeppy import FaceLandmarkTracker
 
 # Path to your license file
-license_path="face106.lic"
+license_path="dp_face_2025.lic"
 
 def run_face_tracker_image(image_paths):
     dp_face = FaceLandmarkTracker()
