@@ -65,9 +65,11 @@ pip install deeppy-2.19.459-cp310-cp310-win_amd64.whl
 import cv2
 from deeppy import FaceLandmarkTracker
 
+license_path="face106.lic"
+
 def run_face_tracker_camera():
     dp_face = FaceLandmarkTracker()
-    dp_face.init()
+    dp_face.init(license_path)
 
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
@@ -104,9 +106,11 @@ if __name__ == "__main__":
 import cv2
 from deeppy import FaceLandmarkTracker
 
+license_path="face106.lic"
+
 def run_face_tracker_image(image_paths):
     dp_face = FaceLandmarkTracker()
-    dp_face.init()
+    dp_face.init(license_path)
 
     for path in image_paths:
         frame = cv2.imread(path)
