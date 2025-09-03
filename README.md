@@ -36,7 +36,7 @@ Install via pip using the provided `.whl` file:
 pip install deeppy-2.19.459-cp310-cp310-win_amd64.whl
 ```
 
-> ⚠️ **Note:** This library requires an **active internet connection** to validate your license at runtime.
+> ⚠️ **Note:** This library requires license validation at runtime.
 
 ---
 
@@ -181,7 +181,6 @@ image_out = display_debug(image_src)
 ## License
 
 This library is **proprietary and requires a paid license**. You may **not use, distribute, or modify** it without a valid license.  
-An active internet connection is required at runtime for license validation.  
 
 
 ### How to Get a License
