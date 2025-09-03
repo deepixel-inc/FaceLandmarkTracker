@@ -65,6 +65,7 @@ pip install deeppy-2.19.459-cp310-cp310-win_amd64.whl
 import cv2
 from deeppy import FaceLandmarkTracker
 
+# Path to your license file
 license_path="face106.lic"
 
 def run_face_tracker_camera():
@@ -106,6 +107,7 @@ if __name__ == "__main__":
 import cv2
 from deeppy import FaceLandmarkTracker
 
+# Path to your license file
 license_path="face106.lic"
 
 def run_face_tracker_image(image_paths):
