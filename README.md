@@ -149,15 +149,26 @@ if __name__ == "__main__":
 ### Initialization
 
 ```python
-init()
-```
-* Returns `True` if models loaded successfully
+license_path = "dp_face_2025.lic"
+
+dp_face = FaceLandmarkTracker()
+if dp_face.init(license_path):
+    print("Model loaded successfully")
+else:
+    print("Model initialization failed")
+````
+
+* `license_path` – Path to the required license file (`.lic`).
+* `init(license_path)` – Loads the face tracking models using the given license.
+
+  * Returns `True` if the models are loaded successfully.
+  * Raises an exception if the license file path is invalid or the license is not valid.
 
 
 ### Tracking
 
 ```python
-run(image_src, fThresh, isStill)
+dp_face.run(image_src, fThresh, isStill)
 ```
 
 * `image_src` – input image (numpy array)
@@ -167,10 +178,10 @@ run(image_src, fThresh, isStill)
 ### Get Results
 
 ```python
-keypoints = get_keypoints()
-rect = get_rect()
-visibility = get_visibility()
-pose = get_pose()
+keypoints = dp_face.get_keypoints()
+rect = dp_face.get_rect()
+visibility = dp_face.get_visibility()
+pose = dp_face.get_pose()
 ```
 
 * `get_keypoints()` – returns 106 x 2 array of facial landmarks
@@ -181,7 +192,7 @@ pose = get_pose()
 ### Visualization
 
 ```python
-image_out = display_debug(image_src)
+image_out = dp_face.display_debug(image_src)
 ```
 
 * Draws landmarks, bounding boxes, and pose axes on the image
